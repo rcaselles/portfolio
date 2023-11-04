@@ -1,0 +1,41 @@
+.header {
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  font-size: 1.5rem;
+  max-width: var(--max-width);
+  width: 100%;
+}
+
+.header-logo {
+  user-select: none;
+  cursor: pointer;
+}
+
+.nav {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.nav-item {
+  font-size: 1rem;
+  padding: 2px;
+  border-bottom: 2px solid transparent;
+}
+
+.nav-item:hover {
+  border-bottom: 2px solid red;
+  padding: 2px;
+}
+
+.nav-item:focus {
+  border-bottom: 2px solid red;
+}
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+}
